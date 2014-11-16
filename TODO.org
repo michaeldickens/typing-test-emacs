@@ -1,0 +1,11 @@
+* Implementation Strategy
+  typing-test implements its own major mode.
+
+    you should type these words
+
+    you shou_ <-- cursor
+
+    this is the next line
+
+  After each key insertion or deletion, it compares the current line to the previous line to see if they are the same. If not, it changes the colors of the window. Once it reaches the end of the line, it skips to below the next line of text.
+
